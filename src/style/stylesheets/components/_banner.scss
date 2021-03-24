@@ -1,0 +1,130 @@
+.banner {
+  width: 100%;
+  height: 425px;
+  background-size: cover;
+  background-position: bottom;
+  color: white;
+  text-align: right;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  background-image: $linear-gradient-banner, url(../images/tools.png);
+}
+
+.banner__h1-regular {
+  font-weight: 200;
+}
+
+.banner__link {
+  text-decoration: underline;
+}
+
+.banner__content {
+  margin-right: 200px;
+}
+
+/* CATEGORY BANNER */
+.categories__banner {
+  width: 100%;
+  height: 350px;
+  background-size: cover;
+  background-position: right;
+  margin: 40px 0px;
+  background-image: $linear-gradient-category-banner,
+    url(../images/bg-highlight-cat.png);
+  border-radius: $border-radius-select-prods;
+  display: flex;
+  align-items: center;
+}
+
+.categories__banner-content {
+  margin-left: 90px;
+  width: 39%;
+
+  h2 {
+    margin-bottom: 14px;
+  }
+
+  p:last-child {
+    color: $secondary-text-color;
+  }
+}
+
+.newsletter__banner {
+  background-image: url(../images/bg-newsletter.png);
+  height: 332px;
+  background-size: contain;
+  color: white;
+  display: flex;
+  align-items: center;
+  background-repeat: no-repeat;
+}
+
+.newsletter__banner-content {
+  margin-left: 200px;
+}
+
+@media (max-width: 414px) {
+  .banner {
+    align-items: flex-end;
+  }
+
+  .banner__content {
+    margin-right: 20px;
+    margin-bottom: 40px;
+
+    h1 {
+      font-size: 40px;
+      line-height: 60px;
+    }
+  }
+
+  .categories__banner {
+    background-size: cover;
+    width: auto;
+    height: 235px;
+    border-radius: 20px;
+    padding: 30px;
+
+    h2 {
+      font-size: 24px;
+      line-height: 32px;
+    }
+  }
+
+  .categories__banner-content {
+    width: auto;
+    margin-left: 0px;
+
+    p {
+      font-size: 16px;
+      line-height: 24px;
+    }
+  }
+
+  .newsletter__banner {
+    background-image: url(../images/bg-newsletter.png);
+    height: 332px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    align-items: flex-end;
+  }
+
+  .newsletter__banner-content {
+    margin-left: 20px;
+    padding-bottom: 40px;
+
+    h1 {
+      font-size: 38px;
+    }
+
+    .newsletter__banner--subscribe-btn {
+      background: white;
+      color: $base-text-color;
+      padding: 14px 24px;
+      border-radius: 10px;
+      transition: 0.3s;
+    }
+  }
+}

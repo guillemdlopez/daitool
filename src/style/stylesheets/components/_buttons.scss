@@ -1,0 +1,132 @@
+/** General btn classes **/
+
+.btn {
+  font-weight: $button-font-weight;
+  font-size: $button-font-size;
+  line-height: $button-line-height;
+  letter-spacing: $button-letter-spacing;
+  background: none;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.btn__border__non {
+  border: none;
+}
+
+.btn__text {
+  font-weight: $button-font-weight;
+  font-size: $button-font-size;
+  line-height: $button-line-height;
+  letter-spacing: $button-letter-spacing;
+}
+
+.inactive__btn {
+  border: 1px solid $inactive-state-color;
+  color: $inactive-state-color;
+}
+
+.active__primary__btn {
+  border: 1px solid $primary;
+  color: $primary;
+}
+
+/** Specific btns **/
+
+.slider__btn {
+  z-index: 10;
+  border: none;
+  background: rgba(255, 255, 255, 0.7);
+  font-family: inherit;
+  border-radius: 50%;
+  position: absolute;
+  top: 46px;
+  cursor: pointer;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slider__btn-right {
+  right: 113px;
+}
+
+.btn__subscribe--black,
+.btn__subscribe--orange {
+  border-radius: $border-radius-btn;
+}
+
+.btn__contact {
+  border: $border-btn-contact;
+  border-radius: 12px;
+  color: $blue-color;
+}
+
+.btn__search {
+  position: absolute;
+  right: 87px;
+  top: 3px;
+}
+
+.selected__prods--btn-right,
+.selected__prods--btn-left {
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.selected__prods--btn-left {
+  margin-right: 15px;
+}
+
+.newsletter__banner--subscribe-btn {
+  background: $primary;
+  color: white;
+  padding: 14px 24px;
+  border-radius: $border-radius-btn;
+  transition: 0.3s;
+
+  &:hover {
+    background: darken($color: $primary, $amount: 5);
+  }
+}
+
+.btn__contact {
+  border-radius: $border-radius-contact-btn;
+  border: $border-btn-contact;
+  color: $blue-color;
+  padding: 10px 24px;
+  transition: 0.3s;
+
+  &:hover {
+    background: $blue-color;
+    color: white;
+  }
+}
+
+@media (max-width: 414px) {
+  .slider__btn {
+    display: none;
+  }
+  .btn__contact {
+    border-radius: 12px;
+    border: 1px solid #92d2d9;
+    color: #92d2d9;
+    padding: 10px 24px;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+
+  .btn__search {
+    position: absolute;
+    right: 16px;
+    top: 25px;
+  }
+}

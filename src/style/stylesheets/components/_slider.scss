@@ -1,0 +1,50 @@
+.slider {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr);
+  align-items: center;
+  justify-items: center;
+
+  img {
+    width: 100px;
+  }
+}
+
+.selected__prods-slider {
+  display: flex;
+  align-items: center;
+}
+
+.wrapper {
+  overflow: hidden;
+}
+
+// .slide {
+//   position: absolute;
+//   top: 0;
+//   height: 50rem;
+
+//   display: flex;
+//   align-items: center;
+//   justify-content: center;
+
+//   /* THIS creates the animation! */
+//   transition: transform 1s;
+// }
+
+@media (max-width: 414px) {
+  .slider {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: center;
+    justify-items: center;
+    grid-gap: 20px;
+    margin-top: 40px;
+  }
+
+  .selected__prods-slider {
+    display: flex;
+    width: 100vw;
+    overflow-x: scroll;
+    height: 103%;
+  }
+}

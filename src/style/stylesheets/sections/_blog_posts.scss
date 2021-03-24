@@ -1,0 +1,28 @@
+#blog__posts {
+  margin-top: 60px;
+}
+
+.blog__posts-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.blog__posts--view-all {
+  color: $blue-color;
+  cursor: pointer;
+  transition: color 0.3s;
+
+  &:hover {
+    color: darken($color: $blue-color, $amount: 20);
+  }
+}
+
+@media (max-width: 414px) {
+  #blog__posts {
+    margin-top: 0px;
+    h3 {
+      color: $medium-gray;
+    }
+  }
+}

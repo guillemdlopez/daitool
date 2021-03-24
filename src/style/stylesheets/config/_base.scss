@@ -1,0 +1,186 @@
+/* HTML GLOBAL CONFIG */
+* {
+  margin: 0px;
+  font-family: $font-family;
+}
+
+::placeholder {
+  color: $secondary-text-color;
+}
+
+body {
+  margin-bottom: 40px;
+  color: $base-text-color;
+}
+
+h1 {
+  font-weight: $h1-font-weight;
+  font-size: $h1-font-size;
+  line-height: $h1-line-height;
+  letter-spacing: $h1-letter-spacing;
+  margin: 0px;
+}
+
+h2 {
+  font-weight: $h2-font-weight;
+  font-size: $h2-font-size;
+  line-height: $h2-line-height;
+  letter-spacing: $h2-letter-spacing;
+  margin: 0px;
+  color: $base-text-color;
+}
+
+h3 {
+  font-weight: $h3-font-weight;
+  font-size: $h3-font-size;
+  line-height: $h3-line-height;
+  letter-spacing: $h3-letter-spacing;
+  margin: 0px;
+}
+
+.h4__bold {
+  font-weight: $h4-bold-font-weight;
+  font-size: $h4-bold-font-size;
+  line-height: $h4-bold-line-height;
+  letter-spacing: $h4-bold-letter-spacing;
+  margin: 0px;
+}
+
+.h4__regular {
+  font-weight: $h4-font-weight;
+  font-size: $h4-font-size;
+  line-height: $h4-line-height;
+  letter-spacing: $h4-letter-spacing;
+  margin: 0px;
+}
+
+h5 {
+  font-weight: $h5-font-weight;
+  font-size: $h5-font-size;
+  line-height: $h5-line-height;
+  letter-spacing: $h5-letter-spacing;
+  margin: 0px;
+}
+
+h6 {
+  font-weight: $h6-font-weight;
+  font-size: $h6-font-size;
+  line-height: $h6-line-height;
+  letter-spacing: $h6-letter-spacing;
+  margin: 0px;
+}
+
+.h6__select {
+  font-weight: $h6-select-font-weight;
+  font-size: $h6-select-font-size;
+  line-height: $h6-select-line-height;
+  letter-spacing: $h6-select-letter-spacing;
+  margin: 0px;
+}
+
+p {
+  font-weight: $body-copy-font-weight;
+  font-size: $body-copy-font-size;
+  line-height: $body-copy-line-height;
+  letter-spacing: $body-copy-letter-spacing;
+  margin: 0px;
+}
+
+a {
+  color: $links-color;
+  font-size: $body-copy-font-size;
+  font-weight: $body-copy-font-weight;
+  line-height: $body-copy-line-height;
+  letter-spacing: $body-copy-letter-spacing;
+  margin: 0px;
+}
+
+input {
+  font-family: $font-family;
+  &:focus {
+    outline: none;
+  }
+}
+
+.small {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 28px;
+}
+
+.subtitle {
+  font-size: $subtitle-font-size;
+  font-weight: $subtitle-font-weight;
+  line-height: $subtitle-line-height;
+  color: $subtitle-color;
+}
+
+.primary__text {
+  color: $primary;
+}
+
+.secondary__text {
+  color: $secondary-text-color;
+}
+
+.gray {
+  color: $medium-gray;
+}
+
+.selected__prod {
+  font-weight: $select-prods-sm-price-font-weight;
+  font-size: $select-prods-sm-price-font-size;
+  line-height: $select-prods-sm-price-line-height;
+  letter-spacing: $select-prods-sm-price-letter-spacing;
+}
+/** Sizing and format **/
+
+.container {
+  width: $container;
+  margin: 0 auto;
+}
+
+.wrapper {
+  background-color: #f9f9fb;
+  padding: 40px 0px;
+}
+
+.inline-list {
+  padding-left: 0px;
+
+  li {
+    display: inline-block;
+  }
+}
+
+.list {
+  padding-left: 0px;
+
+  li {
+    display: block;
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    width: 400px;
+    margin: 0 auto;
+  }
+
+  .wrapper {
+    background: white;
+  }
+
+  .menu {
+    display: none;
+  }
+
+  h4 {
+    font-size: 18px;
+  }
+
+  .small {
+    font-size: 15px;
+    line-height: 24px;
+  }
+}

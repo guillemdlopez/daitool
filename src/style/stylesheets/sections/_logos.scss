@@ -1,0 +1,14 @@
+#logos {
+  margin-top: 80px;
+  position: relative;
+
+  h4 {
+    margin-bottom: 20px;
+  }
+}
+
+@media (max-width: 414px) {
+  #logos {
+    margin-top: 40px;
+  }
+}

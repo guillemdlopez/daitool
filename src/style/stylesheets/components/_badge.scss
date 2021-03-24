@@ -1,0 +1,31 @@
+.badge {
+  position: absolute;
+  background-color: white;
+  color: $primary;
+  border-radius: 50%;
+  width: 21px;
+  height: 21px;
+  top: 6px;
+  right: 104px;
+  font-size: 12px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+@media (max-width: 414px) {
+  .badge {
+    position: absolute;
+    background-color: white;
+    color: #ff723d;
+    border-radius: 50%;
+    width: 21px;
+    height: 21px;
+    top: 17px;
+    right: 28px;
+    font-size: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}

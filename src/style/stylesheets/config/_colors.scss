@@ -1,0 +1,27 @@
+$primary: #ff723d;
+$blue-color: #92d2d9;
+$lightgray: #ececec;
+$lightergray: #f9f9fb;
+$secondary-black: #232323;
+$secondary-white: #ececec;
+$medium-gray: #c4c4c4;
+
+// title texts, captions, input fields and everywhere else where black is required
+$base-text-color: #25282b;
+// secondary text
+$secondary-text-color: #52575c;
+// inactive state
+$inactive-state-color: #a0a4a8;
+// default texts in text field
+$default-text-fields-color: #cacccf;
+// dividers. borders, disabled states
+$divider-color: #e8e8e8;
+$border-color: #e8e8e8;
+$disabled-color: #e8e8e8;
+// background and disabled background for buttons
+$disabled-bg-buttons-color: #f9f9fa;
+
+// 1.1) Additional colors
+$warning-err-color: #fb5341;
+$links-color: $primary;
+$in-body-links-color: $primary;

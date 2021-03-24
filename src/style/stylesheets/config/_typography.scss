@@ -1,0 +1,136 @@
+$font-family: 'Mulish', sans-serif;
+
+// 3.1) H1
+$h1-font-weight: bolder;
+$h1-font-size: 64px;
+$h1-line-height: 86px;
+$h1-letter-spacing: 0.2px;
+
+// 3.2) H2
+$h2-font-weight: 700;
+$h2-font-size: 46px;
+$h2-line-height: 62px;
+$h2-letter-spacing: 0px;
+
+// 3.3) H3
+$h3-font-weight: 700;
+$h3-font-size: 30px;
+$h3-line-height: 46px;
+$h3-letter-spacing: 0.1px;
+
+// 3.4) H4 --bold
+$h4-bold-font-weight: 700;
+$h4-bold-font-size: 18px;
+$h4-bold-line-height: 32px;
+$h4-bold-letter-spacing: 0.2px;
+
+// 3.5) H4 --regular
+$h4-font-weight: 400;
+$h4-font-size: 14px;
+$h4-line-height: 24px;
+$h4-letter-spacing: 0.1px;
+
+// 3.6) H5
+$h5-font-weight: 700;
+$h5-font-size: 24px;
+$h5-line-height: 86px;
+$h5-letter-spacing: 0.2px;
+
+// 3.7) H6
+$h6-font-weight: 600;
+$h6-font-size: 24px;
+$h6-line-height: 30px;
+$h6-letter-spacing: 0.1px;
+
+// 3.8) H6 --selected
+$h6-select-font-weight: 700;
+$h6-select-font-size: 24px;
+$h6-select-line-height: 30px;
+$h6-select-letter-spacing: 0.1px;
+
+// 3.9) BODY --copy
+$body-copy-font-weight: 400;
+$body-copy-font-size: 16px;
+$body-copy-line-height: 34px;
+$body-copy-letter-spacing: 0.2px;
+
+// 3.10) IN COPY HEADER - X
+$copy-header-font-weight: 700;
+$copy-header-font-size: 24px;
+$copy-header-line-height: 30px;
+$copy-header-letter-spacing: 0.2px;
+
+// 3.11) NAVIGATION - X
+$navigation-font-weight: 600;
+$navigation-font-size: 16px;
+$navigation-line-height: 24px;
+$navigation-letter-spacing: 0.2px;
+
+// 3.12) BREADCRUMBS - X
+$breadcrumbs-font-weight: 400;
+$breadcrumbs-font-size: 15px;
+$breadcrumbs-line-height: 20px;
+$breadcrumbs-letter-spacing: 0.2px;
+
+// 3.12) BUTTON
+$button-font-weight: 400;
+$button-font-size: 16px;
+$button-line-height: 24px;
+$button-letter-spacing: 0.2px;
+
+// 3.13) SELECTED PRODUCTS
+$select-prods-font-weight: 700;
+$select-prods-font-size: 20px;
+$select-prods-line-height: 28px;
+$select-prods-letter-spacing: 0.2px;
+
+// 3.13) SELECTED PRODUCTS --small price
+$select-prods-sm-price-font-weight: 400;
+$select-prods-sm-price-font-size: 12px;
+$select-prods-sm-price-line-height: 24px;
+$select-prods-sm-price-letter-spacing: 0.2px;
+
+// 3.14) FOOTER --header
+$footer-header-font-weight: 700;
+$footer-header-font-size: 18px;
+$footer-header-line-height: 24px;
+$footer-header-letter-spacing: 0.2px;
+
+// 3.14) FOOTER --links
+$footer-links-font-weight: 400;
+$footer-links-font-size: 16px;
+$footer-links-line-height: 36px;
+$footer-links-letter-spacing: 0.2px;
+
+// 3.14) CLIENT AREA --header
+$client-header-font-weight: 700;
+$client-header-font-size: 16px;
+$client-header-line-height: 22px;
+$client-header-letter-spacing: 0.2px;
+
+// 3.14) CLIENT AREA --text
+$client-text-font-weight: 400;
+$client-text-font-size: 16px;
+$client-text-line-height: 32px;
+$client-text-letter-spacing: 0.2px;
+
+// 3.14) CLIENT AREA --link
+$client-links-font-weight: 600;
+$client-links-font-size: 14px;
+$client-links-line-height: 22px;
+$client-links-letter-spacing: 0.2px;
+
+// 3.15) SUBTITLE
+$subtitle-font-weight: bolder;
+$subtitle-font-size: 16px;
+$subtitle-line-height: 20px;
+$subtitle-color: $primary;
+
+// 3.15) Typography actions
+
+// 3.15.1) Normal body copy, Link body copy and Selected link body copy
+$typo-action-font-weight: $body-copy-font-weight;
+$typo-action-font-size: $body-copy-font-size;
+$typo-action-line-height: $body-copy-line-height;
+$typo-action-line-spacing: $body-copy-letter-spacing;
+$link-body-copy-color: $links-color;

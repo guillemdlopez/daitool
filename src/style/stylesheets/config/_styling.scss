@@ -1,0 +1,39 @@
+$container: 1220px;
+
+// Linear gradient
+$linear-gradient-category-banner: linear-gradient(
+  90.67deg,
+  #f1f1f3 43.94%,
+  rgba(240, 240, 242, 0) 99.4%
+);
+$linear-gradient-banner: linear-gradient(
+  270.13deg,
+  #232323 -5.49%,
+  rgba(35, 35, 35, 0) 50.02%
+);
+$linear-gradient-category-card: linear-gradient(
+  90deg,
+  #232323 15.27%,
+  rgba(255, 255, 255, 0) 105.39%
+);
+
+// Box shadows
+$box-shadow-select-prods: 0px 5px 6px rgba(0, 0, 0, 0.06);
+$box-shadow-hover: 0px 5px 6px rgba(0, 0, 0, 0.2);
+
+// Border radius
+$border-radius-select-prods: 30px;
+$border-radius-categories-card: 14px;
+$border-radius-input-newsletter: 12px;
+$border-radius-searchbar: 20px;
+$border-radius-features: 14px;
+$border-radius-btn: 10px;
+$border-radius-contact-btn: 12px;
+$border-radius-social-icons: 10px;
+
+// Border
+$border-features: 1px solid $border-color;
+$border-btn-contact: 1px solid $blue-color;
+
+// Padding
+$padding-nav-menu: 11px 53px;
