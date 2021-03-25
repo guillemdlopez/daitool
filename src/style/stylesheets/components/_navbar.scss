@@ -90,6 +90,7 @@
     display: grid;
     align-items: center;
     grid-template-columns: 1fr 1fr;
+    position: relative;
   }
 
   .navbar__logo__burger {
