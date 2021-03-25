@@ -70,17 +70,6 @@
   }
 }
 
-@media (max-width: 1440px) {
-  .navbar__logo__burger {
-    display: flex;
-    justify-content: flex-end;
-
-    i {
-      visibility: hidden;
-    }
-  }
-}
-
 @media (max-width: 414px) {
   .currency {
     display: none;
@@ -97,7 +86,7 @@
 
   .navbar__logo__burger {
     i {
-      visibility: visible;
+      display: block !important;
     }
   }
 
@@ -132,5 +121,16 @@
     color: #25282b;
     height: 18px;
     margin-top: 20px;
+  }
+}
+
+@media (max-width: 1440px) {
+  .navbar__logo__burger {
+    display: flex;
+    justify-content: flex-end;
+
+    i {
+      display: none;
+    }
   }
 }

@@ -3,7 +3,6 @@ export const initSidebar = () => {
   const sidebar = document.querySelector('.sidebar');
 
   if (burger) {
-    console.log(burger);
     burger.addEventListener('click', e => {
       if (!e.target.classList.contains('navbar__burger-menu')) return;
 
