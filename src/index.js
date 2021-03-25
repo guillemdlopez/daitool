@@ -1,4 +1,6 @@
+import { closeSidebar } from './javascript/closeSidebar';
 import { initScroll } from './javascript/initScroll';
+import { initSidebar } from './javascript/initSidebar';
 import { initSlider } from './javascript/initSlider';
 import { modalNewsletter } from './javascript/modalNewsletter';
 import { showDescriptionCategory } from './javascript/showDescriptionCategory';
@@ -11,3 +13,5 @@ initSlider();
 initScroll();
 modalNewsletter();
 showDescriptionCategory();
+initSidebar();
+closeSidebar();

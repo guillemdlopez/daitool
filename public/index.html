@@ -20,9 +20,41 @@
   </head>
   <body>
     <main>
+      <div class="sidebar">
+        <div class="siderbar__logo-icon">
+          <i class="fas fa-times sidebar__close"></i>
+          <img
+            src="../src/style/images/logo-black.png"
+            alt="daitool logo in black"
+            class="sidebar__logo-black"
+          />
+        </div>
+        <div class="sidebar__products-about">
+          <h3>Products</h3>
+          <ul class="list sidebar__products--list">
+            <li>Safety</li>
+            <li>Janitorial</li>
+            <li>Woodworking</li>
+            <li>Gardening</li>
+            <li>Office Supplies</li>
+          </ul>
+          <h3>About Us</h3>
+          <ul class="list sidebar__about--list">
+            <li>Blog</li>
+            <li>Brands</li>
+          </ul>
+        </div>
+        <div class="sidebar__contact">
+          <h3>Need Help?</h3>
+          <ul class="list sidebar__contact--list">
+            <li><i class="fas fa-phone-alt"></i> + 123 456 789</li>
+            <li><i class="fas fa-envelope"></i> info@daitool.com</li>
+          </ul>
+        </div>
+      </div>
       <nav class="navbar">
         <div class="navbar__logo__burger">
-          <i class="fas fa-bars"></i>
+          <i class="fas fa-bars navbar__burger-menu"></i>
           <img
             class="navbar__logo"
             src="../src/style/images/logo-white.png"
@@ -51,6 +83,7 @@
           </div>
         </div>
       </nav>
+
       <ul class="menu inline-list">
         <li class="safety-menu menu__item" data-cat="safety">
           SAFETY <i class="fas fa-caret-down"></i>
