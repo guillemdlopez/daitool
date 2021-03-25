@@ -13,19 +13,21 @@ export const modalNewsletter = () => {
     }
 
     if (!validator.isEmail(emailInput.value)) {
-      Swal.fire(
-        'Error ⛔️',
-        'You have to introduce a valid email address ',
-        'error'
-      );
+      Swal.fire({
+        confirmButtonColor: '#ff723d',
+        title: 'Error ⛔️',
+        text: 'You have to introduce a valid email address ',
+        icon: 'error',
+      });
     }
 
     if (validator.isEmail(emailInput.value)) {
-      Swal.fire(
-        'Congrats! 🥳🎉',
-        'Your email has been successfully submitted',
-        'success'
-      );
+      Swal.fire({
+        confirmButtonColor: '#ff723d',
+        title: 'Congrats! 🥳🎉',
+        text: 'Your email has been successfully submitted',
+        icon: 'success',
+      });
       emailInput.value = '';
       emailInput.blur();
     }
