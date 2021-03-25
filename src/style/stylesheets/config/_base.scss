@@ -5,7 +5,7 @@
 }
 
 ::placeholder {
-  color: $secondary-text-color;
+  color: $default-text-fields-color;
 }
 
 body {
@@ -127,6 +127,10 @@ input {
   color: $medium-gray;
 }
 
+.lightgray {
+  color: #c4c4c4;
+}
+
 .selected__prod {
   font-weight: $select-prods-sm-price-font-weight;
   font-size: $select-prods-sm-price-font-size;
@@ -167,6 +171,12 @@ input {
 
   li {
     display: block;
+    margin-bottom: 5px;
+    cursor: pointer;
+
+    &:hover {
+      color: darken($color: $secondary-text-color, $amount: 30);
+    }
   }
 }
 
@@ -178,6 +188,8 @@ input {
 
   .wrapper {
     background: white;
+    height: auto;
+    padding: 0px 0px 40px;
   }
 
   .menu {

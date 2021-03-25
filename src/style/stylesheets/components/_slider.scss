@@ -44,9 +44,14 @@
 
   .selected__prods-slider {
     display: flex;
-    width: 100vw;
+    width: 100%;
     overflow-x: scroll;
     height: 103%;
+    width: 100%;
+    position: relative;
+    top: 0px;
+    right: 0px;
+    padding: 10px;
 
     &::-webkit-scrollbar {
       display: none;

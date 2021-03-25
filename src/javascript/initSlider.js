@@ -29,10 +29,9 @@ export const initSlider = function () {
     }
 
     if (left && btnLeft.classList.contains('active__primary__btn')) {
-      if (totalPixels === 1960) {
+      if (totalPixels <= 1960) {
         btnRight.classList.remove('inactive__btn');
         btnRight.classList.add('active__primary__btn');
-        btnRight.disabled = false;
       }
 
       totalPixels -= pixelsToMove;

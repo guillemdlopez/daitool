@@ -3,7 +3,8 @@ export const showHideSubCategories = () => {
   const allSubCategories = document.querySelectorAll('.menu__subcategories');
 
   menu.addEventListener('mouseover', e => {
-    if (!e.target.classList.contains('menu__item')) return;
+    if (!e.target.dataset.cat) return;
+    console.log(e.target);
 
     allSubCategories.forEach(subcat => subcat.classList.add('hidden'));
 
@@ -18,7 +19,7 @@ export const showHideSubCategories = () => {
   document.addEventListener('mouseover', e => {
     if (
       e.target.classList.contains('menu__item') ||
-      e.target.classList.contains('menu__subcategories')
+      e.target.closest('.menu__subcategories')
     )
       return;
 

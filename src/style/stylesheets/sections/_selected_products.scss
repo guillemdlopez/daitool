@@ -2,13 +2,6 @@
   margin-top: 60px;
 }
 
-.selected__prods--flex {
-  // display: grid;
-  // grid-template-columns: 1fr 1fr;
-  // align-items: center;
-  // grid-gap: 100px;
-}
-
 .selected__prods-controls-inside--gray {
   height: 226%;
   background: #f9f9fb;
@@ -40,6 +33,7 @@
 
     h4 {
       margin-bottom: 40px;
+      visibility: visible !important;
     }
   }
 }

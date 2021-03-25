@@ -38,14 +38,14 @@
 
 /** Specific btns **/
 
-.slider__btn {
+.slider__btn-brands {
   z-index: 10;
   border: none;
   background: rgba(255, 255, 255, 0.7);
   font-family: inherit;
   border-radius: 50%;
   position: absolute;
-  top: 46px;
+  top: 9px;
   cursor: pointer;
 
   &:focus {
@@ -53,7 +53,7 @@
   }
 }
 
-.slider__btn-right {
+.slider__btn-brands-right {
   right: 113px;
 }
 

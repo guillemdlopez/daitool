@@ -62,25 +62,26 @@
           TOOLS <i class="fas fa-caret-down"></i>
         </li>
         <li class="woodworking-menu menu__item" data-cat="woodworking">
-          WOODWORKING
+          WOODWORKING <i class="fas fa-caret-down"></i>
         </li>
         <li class="gardening-menu menu__item" data-cat="gardening">
-          GARDENING
+          GARDENING <i class="fas fa-caret-down"></i>
         </li>
         <li class="office-supplies-menu menu__item" data-cat="office-supplies">
-          OFFICE SUPPLIES
+          OFFICE SUPPLIES <i class="fas fa-caret-down"></i>
         </li>
-        <li class="blog-menu menu__item" data-cat="blog">BLOG</li>
-        <li class="brands-menu menu__item" data-cat="brands">BRANDS</li>
-        <li class="about-menu menu__item" data-cat="about">ABOUT US</li>
+        <li class="blog-menu menu__item" data-section="blog__posts">BLOG</li>
+        <li class="brands-menu menu__item" data-section="brands">BRANDS</li>
+        <li class="about-menu menu__item" data-section="about">ABOUT US</li>
       </ul>
       <!-- Sub categories SAFETY-->
       <div class="menu__subcategories safety-sub hidden">
         <div class="menu__subcategories-content">
+          <h4 class="h4__bold">Safety</h4>
           <ul class="list">
-            <li class="">Something</li>
-            <li class="">Something extraordinary</li>
-            <li class="">Something even more extraordinary</li>
+            <li class="secondary__text">Something</li>
+            <li class="secondary__text">Something extraordinary</li>
+            <li class="secondary__text">Something even more extraordinary</li>
           </ul>
           <p class="secondary__text small">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor,
@@ -89,18 +90,15 @@
             maiores. Aut, consectetur?
           </p>
         </div>
-        <img
-          src="../src/style/images/safety-cat.png"
-          alt="safety subcategory image"
-        />
       </div>
       <!-- Sub categories JANITORIAL-->
       <div class="menu__subcategories janitorial-sub hidden">
         <div class="menu__subcategories-content">
+          <h4 class="h4__bold">Janitorial</h4>
           <ul class="list">
-            <li class="">Something</li>
-            <li class="">Something extraordinary</li>
-            <li class="">Something even more extraordinary</li>
+            <li class="secondary__text">Something</li>
+            <li class="secondary__text">Something extraordinary</li>
+            <li class="secondary__text">Something even more extraordinary</li>
           </ul>
           <p class="secondary__text small">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor,
@@ -109,19 +107,16 @@
             maiores. Aut, consectetur?
           </p>
         </div>
-        <img
-          src="../src/style/images/janitorial.png"
-          alt="janitorial subcategory image"
-        />
       </div>
 
       <!-- Sub categories TOOLS-->
       <div class="menu__subcategories tools-sub hidden">
         <div class="menu__subcategories-content">
+          <h4 class="h4__bold">Tools</h4>
           <ul class="list">
-            <li class="">Something</li>
-            <li class="">Something extraordinary</li>
-            <li class="">Something even more extraordinary</li>
+            <li class="secondary__text">Something</li>
+            <li class="secondary__text">Something extraordinary</li>
+            <li class="secondary__text">Something even more extraordinary</li>
           </ul>
           <p class="secondary__text small">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor,
@@ -130,10 +125,60 @@
             maiores. Aut, consectetur?
           </p>
         </div>
-        <img
-          src="../src/style/images/tools-cat.png"
-          alt="tools subcategory image"
-        />
+      </div>
+
+      <!-- Sub categories WOODWORKING-->
+      <div class="menu__subcategories woodworking-sub hidden">
+        <div class="menu__subcategories-content">
+          <h4 class="h4__bold">Woodworking</h4>
+          <ul class="list">
+            <li class="secondary__text">Something</li>
+            <li class="secondary__text">Something extraordinary</li>
+            <li class="secondary__text">Something even more extraordinary</li>
+          </ul>
+          <p class="secondary__text small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor,
+            sint labore temporibus sit mollitia provident vel earum omnis magni
+            exercitationem odio corporis aperiam reiciendis iste nostrum
+            maiores. Aut, consectetur?
+          </p>
+        </div>
+      </div>
+
+      <!-- Sub categories GARDENING-->
+      <div class="menu__subcategories gardening-sub hidden">
+        <div class="menu__subcategories-content">
+          <h4 class="h4__bold">Gardening</h4>
+          <ul class="list">
+            <li class="secondary__text">Something</li>
+            <li class="secondary__text">Something extraordinary</li>
+            <li class="secondary__text">Something even more extraordinary</li>
+          </ul>
+          <p class="secondary__text small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor,
+            sint labore temporibus sit mollitia provident vel earum omnis magni
+            exercitationem odio corporis aperiam reiciendis iste nostrum
+            maiores. Aut, consectetur?
+          </p>
+        </div>
+      </div>
+
+      <!-- Sub categories OFFICE SUPPLIES-->
+      <div class="menu__subcategories office-supplies-sub hidden">
+        <div class="menu__subcategories-content">
+          <h4 class="h4__bold">Office Supplies</h4>
+          <ul class="list">
+            <li class="secondary__text">Something</li>
+            <li class="secondary__text">Something extraordinary</li>
+            <li class="secondary__text">Something even more extraordinary</li>
+          </ul>
+          <p class="secondary__text small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor,
+            sint labore temporibus sit mollitia provident vel earum omnis magni
+            exercitationem odio corporis aperiam reiciendis iste nostrum
+            maiores. Aut, consectetur?
+          </p>
+        </div>
       </div>
 
       <div class="banner">
@@ -201,10 +246,12 @@
       </section>
 
       <!-- SECTION LOGOS -->
-      <section id="logos">
+      <section id="brands">
         <div class="container">
           <h4 class="gray">Our Brands</h4>
-          <button class="btn slider__btn slider__btn-left inactive__btn">
+          <button
+            class="btn slider__btn-brands slider__btn-brands-left inactive__btn"
+          >
             <i class="fas fa-chevron-left"></i>
           </button>
           <div class="slider">
@@ -218,7 +265,7 @@
             <img src="../src/style/images/tone-logo.png" alt="tone logo" />
             <img src="../src/style/images/anex-logo.png" alt="anex logo" />
           </div>
-          <button class="btn slider__btn slider__btn-right">
+          <button class="btn slider__btn-brands slider__btn-brands-right">
             <i class="fas fa-chevron-right"></i>
           </button>
         </div>
