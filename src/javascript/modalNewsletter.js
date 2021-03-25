@@ -9,7 +9,12 @@ export const modalNewsletter = () => {
     e.preventDefault();
 
     if (!emailInput.value) {
-      Swal.fire('Error ⛔️', 'You have to introduce your email', 'error');
+      Swal.fire({
+        confirmButtonColor: '#ff723d',
+        title: 'Error ⛔️',
+        text: 'You have to introduce your email',
+        icon: 'error',
+      });
     }
 
     if (!validator.isEmail(emailInput.value)) {
