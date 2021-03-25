@@ -14,10 +14,7 @@
   align-items: center;
   overflow: hidden;
   cursor: pointer;
-
-  h4 {
-    color: white;
-  }
+  color: white;
 
   h4:last-child {
     color: $secondary-white;
@@ -26,6 +23,17 @@
 
 .categories__card-content {
   margin-left: 40px;
+  transform: translateY(0px);
+  transition: all 0.3s;
+}
+
+.categories__content--up {
+  transform: translateY(-100px);
+}
+
+.categories__card-title-subtitle {
+  margin-bottom: 40px;
+  margin-top: 111px;
 }
 
 .safety {
