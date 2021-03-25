@@ -5,23 +5,45 @@ export const initSlider = function () {
   const card = document.querySelector('.selected__prods-card');
   const controls = document.querySelector('.controls');
   console.log(controls);
-  let initMove = 0;
+  let initMoveRight = 0;
+  let initMoveLeft = 0;
+  let totalPixels = 0;
 
   controls.addEventListener('click', e => {
-    btnLeft.disabled = true;
-    if (!e.target.closest('.selected__prods--btn-right')) return;
-    // enable btnLeft
-    btnLeft.classList.add('active__primary__btn');
+    if (!e.target.closest('.btn')) return;
+    const right = e.target.closest('.selected__prods--btn-right');
+    const left = e.target.closest('.selected__prods--btn-left');
 
-    // get width of the card
-    const width =
-      +card.style.width.substring(0, 3) +
-      +card.style.marginRight.substring(0, 2);
+    if (right) {
+      console.log('right!');
+      // enable btnLeft
+      btnLeft.classList.add('active__primary__btn');
 
-    const pixels = (initMove += width);
-    // move the div
-    sliderDiv.style.transform = `translate3d(-${pixels}px, 0px, 0px)`;
+      // get width and the margin right of the card
+      const pixelsToMove =
+        +card.style.width.substring(0, 3) +
+        +card.style.marginRight.substring(0, 2);
 
-    console.log('right!');
+      totalPixels = initMoveRight += pixelsToMove;
+      // move the div
+      sliderDiv.style.transform = `translate3d(-${totalPixels}px, 0px, 0px)`;
+
+      console.log(pixelsToMove, initMoveRight, totalPixels);
+    }
+
+    if (left && btnLeft.classList.contains('active__primary__btn')) {
+      const pixelsToMove =
+        +card.style.width.substring(0, 3) +
+        +card.style.marginRight.substring(0, 2);
+
+      totalPixels -= initMoveLeft + pixelsToMove;
+
+      //
+      initMoveRight -= pixelsToMove;
+
+      sliderDiv.style.transform = `translate3d(-${totalPixels}px, 0px, 0px)`;
+
+      console.log('left!');
+    }
   });
 };
