@@ -46,7 +46,7 @@
   border-radius: 50%;
   position: absolute;
   top: 9px;
-  cursor: pointer;
+  z-index: -1;
 
   &:focus {
     outline: none;

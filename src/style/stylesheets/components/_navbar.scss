@@ -4,6 +4,9 @@
   display: grid;
   align-items: center;
   grid-template-columns: 1fr 1fr 1fr;
+  position: sticky;
+  top: 0px;
+  z-index: 2;
 
   p {
     font-size: 12px;

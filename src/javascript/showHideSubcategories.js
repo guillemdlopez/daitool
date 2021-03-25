@@ -4,13 +4,11 @@ export const showHideSubCategories = () => {
 
   menu.addEventListener('mouseover', e => {
     if (!e.target.dataset.cat) return;
-    console.log(e.target);
 
     allSubCategories.forEach(subcat => subcat.classList.add('hidden'));
 
     const category = e.target;
     const data = category.dataset.cat;
-    console.log(data);
 
     const subCategories = document.querySelector(`.${data}-sub`);
     subCategories.classList.remove('hidden');
