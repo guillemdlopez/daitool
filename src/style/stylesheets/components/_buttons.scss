@@ -70,7 +70,7 @@
 
 .btn__search {
   position: absolute;
-  right: 87px;
+  right: 54px;
   top: 3px;
 }
 
@@ -131,4 +131,8 @@
     right: 16px;
     top: 25px;
   }
+}
+
+.swal2-styled.swal2-confirm:focus {
+  box-shadow: none;
 }
