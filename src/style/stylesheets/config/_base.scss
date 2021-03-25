@@ -133,6 +133,12 @@ input {
   line-height: $select-prods-sm-price-line-height;
   letter-spacing: $select-prods-sm-price-letter-spacing;
 }
+
+.hidden {
+  visibility: hidden;
+  opacity: 0;
+  transition: 0.3s;
+}
 /** Sizing and format **/
 
 .container {
@@ -143,6 +149,9 @@ input {
 .wrapper {
   background-color: #f9f9fb;
   padding: 40px 0px;
+  overflow: hidden;
+  position: relative;
+  height: 400px;
 }
 
 .inline-list {

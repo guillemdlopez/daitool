@@ -52,26 +52,88 @@
         </div>
       </nav>
       <ul class="menu inline-list">
-        <li class="safety-menu">SAFETY <i class="fas fa-caret-down"></i></li>
-        <li class="janitorial-menu">JANITORIAL</ class="safety">
-        <li class="tools-menu">TOOLS <i class="fas fa-caret-down"></i></li>
-        <li class="woodworking-menu">WOODWORKING</li>
-        <li class="gardening-menu">GARDENING</li>
-        <li class="office-supplies-menu">OFFICE SUPPLIES</li>
-        <li class="blog-menu">BLOG</li>
-        <li class="brands-menu">BRANDS</li>
-        <li class="about-menu">ABOUT US</li>
+        <li class="safety-menu menu__item" data-cat="safety">
+          SAFETY <i class="fas fa-caret-down"></i>
+        </li>
+        <li class="janitorial-menu menu__item" data-cat="janitorial">
+          JANITORIAL
+        </li>
+        <li class="tools-menu menu__item" data-cat="tools">
+          TOOLS <i class="fas fa-caret-down"></i>
+        </li>
+        <li class="woodworking-menu menu__item" data-cat="woodworking">
+          WOODWORKING
+        </li>
+        <li class="gardening-menu menu__item" data-cat="gardening">
+          GARDENING
+        </li>
+        <li class="office-supplies-menu menu__item" data-cat="office-supplies">
+          OFFICE SUPPLIES
+        </li>
+        <li class="blog-menu menu__item" data-cat="blog">BLOG</li>
+        <li class="brands-menu menu__item" data-cat="brands">BRANDS</li>
+        <li class="about-menu menu__item" data-cat="about">ABOUT US</li>
       </ul>
-      <div class="menu__subcategories safety-sub" data="safety">
+      <!-- Sub categories SAFETY-->
+      <div class="menu__subcategories safety-sub hidden">
         <div class="menu__subcategories-content">
           <ul class="list">
             <li class="">Something</li>
             <li class="">Something extraordinary</li>
             <li class="">Something even more extraordinary</li>
           </ul>
-          <p class="secondary__text small">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor, sint labore temporibus sit mollitia provident vel earum omnis magni exercitationem odio corporis aperiam reiciendis iste nostrum maiores. Aut, consectetur?</p>
+          <p class="secondary__text small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor,
+            sint labore temporibus sit mollitia provident vel earum omnis magni
+            exercitationem odio corporis aperiam reiciendis iste nostrum
+            maiores. Aut, consectetur?
+          </p>
         </div>
-        <img src="../src/style/images/safety-cat.png" alt="safety subcategory image">
+        <img
+          src="../src/style/images/safety-cat.png"
+          alt="safety subcategory image"
+        />
+      </div>
+      <!-- Sub categories JANITORIAL-->
+      <div class="menu__subcategories janitorial-sub hidden">
+        <div class="menu__subcategories-content">
+          <ul class="list">
+            <li class="">Something</li>
+            <li class="">Something extraordinary</li>
+            <li class="">Something even more extraordinary</li>
+          </ul>
+          <p class="secondary__text small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor,
+            sint labore temporibus sit mollitia provident vel earum omnis magni
+            exercitationem odio corporis aperiam reiciendis iste nostrum
+            maiores. Aut, consectetur?
+          </p>
+        </div>
+        <img
+          src="../src/style/images/janitorial.png"
+          alt="janitorial subcategory image"
+        />
+      </div>
+
+      <!-- Sub categories TOOLS-->
+      <div class="menu__subcategories tools-sub hidden">
+        <div class="menu__subcategories-content">
+          <ul class="list">
+            <li class="">Something</li>
+            <li class="">Something extraordinary</li>
+            <li class="">Something even more extraordinary</li>
+          </ul>
+          <p class="secondary__text small">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum dolor,
+            sint labore temporibus sit mollitia provident vel earum omnis magni
+            exercitationem odio corporis aperiam reiciendis iste nostrum
+            maiores. Aut, consectetur?
+          </p>
+        </div>
+        <img
+          src="../src/style/images/tools-cat.png"
+          alt="tools subcategory image"
+        />
       </div>
 
       <div class="banner">
@@ -219,24 +281,34 @@
             <div class="selected__prods--flex">
               <!-- Title and arrows -->
               <div class="selected__prods-controls">
-                <h3>
-                  This Weeks <br />
-                  Top 10 Selected Products
-                </h3>
-                <div class="controls">
-                  <button class="btn selected__prods--btn-left inactive__btn">
-                    <i class="fas fa-chevron-left"></i>
-                  </button>
-                  <button
-                    class="btn selected__prods--btn-right active__primary__btn"
-                  >
-                    <i class="fas fa-chevron-right"></i>
-                  </button>
+                <div class="selected__prods-controls--inside">
+                  <div class="selected__prods-controls-inside--gray"></div>
+                  <div class="selected__pords-controls-inside--text">
+                    <h3>
+                      This Weeks <br />
+                      Top 10 Selected Products
+                    </h3>
+                    <div class="controls">
+                      <button
+                        class="btn selected__prods--btn-left inactive__btn"
+                      >
+                        <i class="fas fa-chevron-left"></i>
+                      </button>
+                      <button
+                        class="btn selected__prods--btn-right active__primary__btn"
+                      >
+                        <i class="fas fa-chevron-right"></i>
+                      </button>
+                    </div>
+                  </div>
                 </div>
               </div>
               <!-- Slider selected products -->
               <div class="selected__prods-slider">
-                <div class="selected__prods-card">
+                <div
+                  class="selected__prods-card"
+                  style="width: 240px; margin-right: 40px"
+                >
                   <img
                     src="../src/style/images/circular-saw-500x500 1.png"
                     alt="selected product"
@@ -252,7 +324,10 @@
                     <i class="fas fa-star primary__text"></i>
                   </div>
                 </div>
-                <div class="selected__prods-card">
+                <div
+                  class="selected__prods-card"
+                  style="width: 240px; margin-right: 40px"
+                >
                   <img
                     src="../src/style/images/circular-saw-500x500 1.png"
                     alt="selected product"
@@ -268,7 +343,10 @@
                     <i class="fas fa-star primary__text"></i>
                   </div>
                 </div>
-                <div class="selected__prods-card">
+                <div
+                  class="selected__prods-card"
+                  style="width: 240px; margin-right: 40px"
+                >
                   <img
                     src="../src/style/images/circular-saw-500x500 1.png"
                     alt="selected product"
@@ -284,7 +362,10 @@
                     <i class="fas fa-star primary__text"></i>
                   </div>
                 </div>
-                <div class="selected__prods-card">
+                <div
+                  class="selected__prods-card"
+                  style="width: 240px; margin-right: 40px"
+                >
                   <img
                     src="../src/style/images/circular-saw-500x500 1.png"
                     alt="selected product"
@@ -300,7 +381,10 @@
                     <i class="fas fa-star primary__text"></i>
                   </div>
                 </div>
-                <div class="selected__prods-card">
+                <div
+                  class="selected__prods-card"
+                  style="width: 240px; margin-right: 40px"
+                >
                   <img
                     src="../src/style/images/circular-saw-500x500 1.png"
                     alt="selected product"
@@ -316,7 +400,10 @@
                     <i class="fas fa-star primary__text"></i>
                   </div>
                 </div>
-                <div class="selected__prods-card">
+                <div
+                  class="selected__prods-card"
+                  style="width: 240px; margin-right: 40px"
+                >
                   <img
                     src="../src/style/images/circular-saw-500x500 1.png"
                     alt="selected product"
@@ -332,7 +419,10 @@
                     <i class="fas fa-star primary__text"></i>
                   </div>
                 </div>
-                <div class="selected__prods-card">
+                <div
+                  class="selected__prods-card"
+                  style="width: 240px; margin-right: 40px"
+                >
                   <img
                     src="../src/style/images/circular-saw-500x500 1.png"
                     alt="selected product"
@@ -348,7 +438,10 @@
                     <i class="fas fa-star primary__text"></i>
                   </div>
                 </div>
-                <div class="selected__prods-card">
+                <div
+                  class="selected__prods-card"
+                  style="width: 240px; margin-right: 40px"
+                >
                   <img
                     src="../src/style/images/circular-saw-500x500 1.png"
                     alt="selected product"
@@ -364,7 +457,10 @@
                     <i class="fas fa-star primary__text"></i>
                   </div>
                 </div>
-                <div class="selected__prods-card">
+                <div
+                  class="selected__prods-card"
+                  style="width: 240px; margin-right: 40px"
+                >
                   <img
                     src="../src/style/images/circular-saw-500x500 1.png"
                     alt="selected product"
@@ -380,7 +476,10 @@
                     <i class="fas fa-star primary__text"></i>
                   </div>
                 </div>
-                <div class="selected__prods-card">
+                <div
+                  class="selected__prods-card"
+                  style="width: 240px; margin-right: 40px"
+                >
                   <img
                     src="../src/style/images/circular-saw-500x500 1.png"
                     alt="selected product"

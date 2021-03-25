@@ -3,15 +3,27 @@
 }
 
 .selected__prods--flex {
-  display: grid;
-  grid-template-columns: 1fr 1fr;
-  align-items: center;
-  grid-gap: 100px;
+  // display: grid;
+  // grid-template-columns: 1fr 1fr;
+  // align-items: center;
+  // grid-gap: 100px;
 }
 
+.selected__prods-controls-inside--gray {
+  height: 226%;
+  background: #f9f9fb;
+  position: absolute;
+  z-index: -1;
+  top: -120px;
+  width: 466px;
+  right: -68px;
+}
 .selected__prods-controls {
   margin-right: 150px;
-  width: 90%;
+  width: 20%;
+  position: absolute;
+  top: 120px;
+  z-index: 1;
 }
 
 .controls {

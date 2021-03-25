@@ -40,6 +40,16 @@
   left: 53px;
 }
 
+.janitorial-sub {
+  top: 107px;
+  left: 123px;
+}
+
+.tools-sub {
+  top: 107px;
+  left: 220px;
+}
+
 .menu__subcategories-content {
   margin-right: 30px;
   p {
@@ -51,6 +61,10 @@
 
 @media (max-width: 414px) {
   .menu {
+    display: none;
+  }
+
+  .menu__subcategories {
     display: none;
   }
 } ;

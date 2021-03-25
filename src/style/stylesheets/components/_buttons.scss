@@ -27,11 +27,13 @@
 .inactive__btn {
   border: 1px solid $inactive-state-color;
   color: $inactive-state-color;
+  cursor: auto;
 }
 
 .active__primary__btn {
   border: 1px solid $primary;
   color: $primary;
+  cursor: pointer;
 }
 
 /** Specific btns **/

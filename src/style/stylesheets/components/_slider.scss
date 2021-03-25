@@ -12,10 +12,12 @@
 .selected__prods-slider {
   display: flex;
   align-items: center;
-}
-
-.wrapper {
-  overflow: hidden;
+  position: absolute;
+  top: 64px;
+  right: -499px;
+  width: 100%;
+  transform: translate3d(0px, 0px, 0px);
+  transition-duration: 0.6s;
 }
 
 // .slide {
@@ -46,5 +48,9 @@
     width: 100vw;
     overflow-x: scroll;
     height: 103%;
+
+    &::-webkit-scrollbar {
+      display: none;
+    }
   }
 }
