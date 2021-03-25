@@ -15,7 +15,6 @@ export const initSlider = function () {
     const left = e.target.closest('.selected__prods--btn-left');
 
     if (right) {
-      console.log('right!');
       // enable btnLeft
       btnLeft.classList.add('active__primary__btn');
 
@@ -28,7 +27,7 @@ export const initSlider = function () {
       // move the div
       sliderDiv.style.transform = `translate3d(-${totalPixels}px, 0px, 0px)`;
 
-      console.log(pixelsToMove, initMoveRight, totalPixels);
+      console.log(totalPixels);
     }
 
     if (left && btnLeft.classList.contains('active__primary__btn')) {
@@ -38,12 +37,13 @@ export const initSlider = function () {
 
       totalPixels -= initMoveLeft + pixelsToMove;
 
-      //
       initMoveRight -= pixelsToMove;
 
       sliderDiv.style.transform = `translate3d(-${totalPixels}px, 0px, 0px)`;
 
-      console.log('left!');
+      if (totalPixels === 0) {
+        btnLeft.classList.remove('active__primary__btn');
+      }
     }
   });
 };
