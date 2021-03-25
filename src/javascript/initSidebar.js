@@ -6,8 +6,8 @@ export const initSidebar = () => {
     console.log(burger);
     burger.addEventListener('click', e => {
       if (!e.target.classList.contains('navbar__burger-menu')) return;
-      console.log(sidebar);
-      sidebar.style.transform = 'translateX(0px)';
+
+      sidebar.classList.remove('sidebar__hide');
       sidebar.style.transition = 'transform 0.3s';
     });
   }

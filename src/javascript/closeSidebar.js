@@ -4,7 +4,9 @@ export const closeSidebar = () => {
 
   if (closeIcon) {
     closeIcon.addEventListener('click', e => {
-      sidebar.style.transform = 'translateX(-328px)';
+      if (!e.target.classList.contains('sidebar__close')) return;
+
+      sidebar.classList.add('sidebar__hide');
       sidebar.style.transition = 'transform 0.3s';
     });
   }
