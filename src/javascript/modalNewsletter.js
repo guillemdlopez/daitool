@@ -9,20 +9,20 @@ export const modalNewsletter = () => {
     e.preventDefault();
 
     if (!emailInput.value) {
-      Swal.fire('Error', 'You have to introduce your email', 'error');
+      Swal.fire('Error ⛔️', 'You have to introduce your email', 'error');
     }
 
     if (!validator.isEmail(emailInput.value)) {
       Swal.fire(
-        'Error',
-        'You have to introduce a valid email address',
+        'Error ⛔️',
+        'You have to introduce a valid email address ',
         'error'
       );
     }
 
     if (validator.isEmail(emailInput.value)) {
       Swal.fire(
-        'Congrats!',
+        'Congrats! 🥳🎉',
         'Your email has been successfully submitted',
         'success'
       );
