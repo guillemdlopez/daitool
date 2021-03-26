@@ -184,6 +184,12 @@
     grid-template-columns: 1fr 1fr 1fr;
   }
 
+  .categories__card {
+    .h4__bold {
+      font-size: 18px;
+    }
+  }
+
   .categories__card-content {
     margin-left: 40px;
     text-align: left;
