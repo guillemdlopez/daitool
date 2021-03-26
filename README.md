@@ -8,10 +8,10 @@
 
 ## Pictures
 
-<kbd>
-<img src="https://github.com/guillemdlopez/daitool/blob/master/src/style/images/captura-pantalla-movil.png" width="200"/>
-</kbd>
-<img src="https://github.com/guillemdlopez/daitool/blob/master/src/style/images/captura-pantalla-ordenador.png" />
+<p float="left">
+ <img src="https://github.com/guillemdlopez/daitool/blob/master/src/style/images/captura-pantalla-movil.png" width="200"/>
+  <img src="https://github.com/guillemdlopez/daitool/blob/master/src/style/images/captura-pantalla-ordenador.png" width="100"/>
+</p>
 
 ## Scripts
 
