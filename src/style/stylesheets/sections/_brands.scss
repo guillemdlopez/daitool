@@ -1,20 +1,20 @@
 #brands {
-  margin-top: 80px;
-  position: relative;
-  scroll-margin: 100px;
+  margin-top: 40px;
 
   h4 {
-    margin-bottom: 20px;
-    display: none;
+    display: block;
   }
 }
 
-@media (min-width: 320px) and (max-width: 414px) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) {
   #brands {
-    margin-top: 40px;
+    margin-top: 80px;
+    position: relative;
+    scroll-margin: 100px;
 
     h4 {
-      display: block;
+      margin-bottom: 20px;
+      display: none;
     }
   }
 }
