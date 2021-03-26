@@ -146,7 +146,7 @@
 .blog__post-card {
   display: inline-block;
   flex: 0 0 auto;
-  margin-right: 20px;
+  margin-right: 10px;
   width: 92%;
 }
 
@@ -154,9 +154,26 @@
   margin-top: 20px;
 }
 
+@media (max-width: 375px) {
+  .features__card {
+    .h4__bold {
+      font-size: 20px;
+    }
+    img {
+      right: 31%;
+    }
+  }
+}
+
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 1) {
   .categories__cards {
     grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  .categories__card {
+    .h4__bold {
+      font-size: 18px;
+    }
   }
 
   .categories__card-content {

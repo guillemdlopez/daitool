@@ -51,7 +51,6 @@
 }
 
 /** Newsletter banner **/
-
 .newsletter__banner {
   background-image: url(../images/bg-newsletter.png);
   height: 332px;
@@ -75,7 +74,7 @@
   transition: 0.3s;
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+@media (min-width: 320px) and (max-width: 414px) {
   // To specify different font sizes only
   .banner__content {
     h1 {

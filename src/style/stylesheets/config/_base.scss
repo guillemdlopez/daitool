@@ -184,12 +184,7 @@ input {
   }
 }
 
-@media (max-width: 414px) {
-  .container {
-    width: 400px;
-    margin: 0 auto;
-  }
-
+@media (min-width: 320px) and (max-width: 414px) {
   .wrapper {
     background: white;
     height: auto;
@@ -200,12 +195,34 @@ input {
     display: none;
   }
 
-  h4 {
+  h4,
+  .h4__bold {
     font-size: 18px;
   }
 
   .small {
     font-size: 15px;
     line-height: 24px;
+  }
+}
+
+@media (max-width: 414px) {
+  .container {
+    width: 400px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 375px) {
+  .container {
+    width: 365px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 320px) {
+  .container {
+    width: 310px;
+    margin: 0 auto;
   }
 }

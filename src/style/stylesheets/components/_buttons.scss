@@ -118,7 +118,7 @@
   }
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+@media (max-width: 414px) and (-webkit-min-device-pixel-ratio: 3) {
   .slider__btn-brands {
     display: none;
   }
@@ -135,6 +135,30 @@
     position: absolute;
     right: 16px;
     top: 29px;
+  }
+}
+
+.swal2-styled.swal2-confirm:focus {
+  box-shadow: none;
+}
+
+@media (max-width: 375px) {
+  .slider__btn-brands {
+    display: none;
+  }
+  .btn__contact {
+    border-radius: 12px;
+    border: 1px solid #92d2d9;
+    color: #92d2d9;
+    padding: 10px 24px;
+    transition: 0.3s;
+    margin-top: 20px;
+  }
+
+  .btn__search {
+    position: absolute;
+    right: 20px;
+    top: 30px;
   }
 }
 

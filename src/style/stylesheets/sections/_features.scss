@@ -1,14 +1,15 @@
 #features {
   margin-top: 120px;
+
   h4:first-child {
     margin-bottom: 40px;
     display: none;
   }
 }
 
-@media only screen and (min-device-width: 414px) and (max-device-width: 736px) and (-webkit-min-device-pixel-ratio: 3) {
+@media (min-width: 320px) and (max-width: 414px) {
   #features {
-    margin-top: 80px;
+    margin: 40px 0px;
 
     h4:first-child {
       margin-bottom: 40px;
