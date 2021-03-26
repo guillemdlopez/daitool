@@ -8,7 +8,7 @@
 
 ## Pictures
 
-<img src="https://github.com/guillemdlopez/daitool/blob/master/src/style/images/captura-pantalla-movil.png" width="50"/>
+<img src="https://github.com/guillemdlopez/daitool/blob/master/src/style/images/captura-pantalla-movil.png" width="100"/>
 <img src="https://github.com/guillemdlopez/daitool/blob/master/src/style/images/captura-pantalla-ordenador.png" />
 
 ## Scripts
