@@ -8,7 +8,7 @@ export const modalNewsletter = () => {
   newsletterform.addEventListener('submit', e => {
     e.preventDefault();
 
-    if (!emailInput.value.length == 0) {
+    if (emailInput.value === '') {
       Swal.fire({
         confirmButtonColor: '#ff723d',
         title: 'Error ⛔️',
