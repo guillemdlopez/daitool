@@ -8,6 +8,9 @@
 
 ## Pictures
 
+![alt-text](https://github.com/guillemdlopez/daitool/blob/master/src/style/images/captura-pantalla-movil.png)
+![alt-text](https://github.com/guillemdlopez/daitool/blob/master/src/style/images/captura-pantalla--ordenador.png)
+
 ## Scripts
 
 To start the local Web Dev Server (usually on port `8080`) ▶️
