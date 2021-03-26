@@ -15,18 +15,19 @@
   background-size: cover;
   display: flex;
   align-items: center;
+  text-align: center;
+  justify-content: center;
   overflow: hidden;
   cursor: pointer;
   color: white;
 
+  .h4__bold {
+    font-size: 24px;
+  }
+
   h4:last-child {
     color: $secondary-white;
   }
-}
-
-.categories__card {
-  text-align: center;
-  justify-content: center;
 }
 
 .categories__card-content {
@@ -83,6 +84,10 @@
   padding: 34px 10px 20px;
   width: 80%;
   border: none;
+
+  .h4__bold {
+    font-size: 18px;
+  }
 
   img {
     position: absolute;
@@ -156,24 +161,27 @@
 
 @media (max-width: 375px) {
   .features__card {
-    .h4__bold {
-      font-size: 20px;
-    }
     img {
       right: 31%;
     }
+  }
+
+  .customer {
+    img {
+      right: 41%;
+    }
+  }
+}
+
+@media (max-width: 320px) {
+  .customer img {
+    right: 39%;
   }
 }
 
 @media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 1) {
   .categories__cards {
     grid-template-columns: 1fr 1fr 1fr;
-  }
-
-  .categories__card {
-    .h4__bold {
-      font-size: 18px;
-    }
   }
 
   .categories__card-content {
