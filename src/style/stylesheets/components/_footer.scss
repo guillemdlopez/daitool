@@ -1,5 +1,54 @@
+/** MOBILE IPHONE6+, IPHONE7+, IPHONE8+ **/
+
 footer {
   padding-top: 80px;
+}
+
+.footer__content {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-gap: 60px;
+  margin-bottom: 150px;
+}
+
+.footer__social {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: rgba(78, 78, 78, 0.45);
+  margin-top: 20px;
+
+  i {
+    background: rgba(203, 203, 203, 0.23);
+    padding: 17px;
+    margin-right: 10px;
+    font-size: 14px;
+    width: 14px;
+
+    display: flex;
+    justify-content: center;
+    border-radius: $border-radius-social-icons;
+    cursor: pointer;
+  }
+
+  i:last-child {
+    margin-right: 0px;
+  }
+}
+
+.youtube {
+  color: #ff7020;
+  background: rgba(255, 112, 32, 0.23);
+}
+
+.footer__contact--contact-details {
+  display: block;
+  justify-content: space-between;
+  margin-top: 0px;
+}
+
+.footer__links__customer {
+  display: flex;
 }
 
 .footer__header {
@@ -18,45 +67,38 @@ footer {
   color: $secondary-text-color;
 }
 
+.footer__payments p {
+  display: none;
+}
+
+.footer__copyright-flex {
+  display: grid;
+  grid-template-columns: 1fr;
+
+  .inline-list {
+    padding-left: 0px;
+    margin-bottom: 10px;
+  }
+}
+
+.footer__payments {
+  order: -1;
+  margin-bottom: 20px;
+}
+
+.footer__left-column p {
+  margin-bottom: 40px;
+}
+
+.contact .footer__header,
+.contact > p {
+  display: none;
+}
+
 .footer__logo-black,
 .sidebar__logo-black {
   width: 150px;
   margin-bottom: 30px;
-}
-
-.footer__social {
-  display: flex;
-  align-items: center;
-  color: rgba(78, 78, 78, 0.45);
-  margin-top: 20px;
-
-  i {
-    background: rgba(203, 203, 203, 0.23);
-    padding: 13px;
-    margin-right: 10px;
-    font-size: 14px;
-    width: 14px;
-    display: flex;
-    justify-content: center;
-    border-radius: $border-radius-social-icons;
-    cursor: pointer;
-  }
-
-  .youtube {
-    color: #ff7020;
-    background: rgba(255, 112, 32, 0.23);
-  }
-}
-
-.footer__content {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-gap: 60px;
-  margin-bottom: 150px;
-}
-
-.footer__links__customer {
-  display: flex;
 }
 
 .footer__list {
@@ -77,33 +119,10 @@ footer {
   margin-right: 40px;
 }
 
-.footer__contact--contact-details {
-  display: flex;
-  justify-content: space-between;
-  margin-top: 20px;
-}
-
 .footer__copyright {
-  border-top: 1px solid $divider-color;
-  padding-top: 30px;
-}
-
-.footer__copyright-flex {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-
-.footer__payments {
-  display: flex;
-  align-items: center;
-
   p {
-    margin-right: 30px;
-  }
-
-  .inline-list li {
-    margin-right: 10px;
+    border-top: 1px solid $divider-color;
+    padding-top: 30px;
   }
 }
 
@@ -111,76 +130,75 @@ footer {
   margin-right: 0px;
 }
 
-@media (max-width: 414px) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 1) {
   .footer__content {
     display: grid;
-    grid-template-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
     grid-gap: 60px;
     margin-bottom: 150px;
   }
 
+  .footer__social {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    color: rgba(78, 78, 78, 0.45);
+    margin-top: 20px;
+
+    i {
+      padding: 13px;
+      font-size: 18px;
+      width: 20px;
+      cursor: pointer;
+    }
+  }
   .footer__contact--contact-details {
-    display: block;
+    display: flex;
     justify-content: space-between;
     margin-top: 20px;
   }
 
   .footer__payments p {
-    display: none;
+    display: block;
   }
 
   .footer__copyright-flex {
-    display: grid;
-    grid-template-columns: 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 
     .inline-list {
-      padding-left: 40px;
-      margin-bottom: 10px;
+      padding-left: 0px;
+      margin-bottom: 0px;
     }
   }
 
   .footer__payments {
-    order: -1;
-    margin-bottom: 20px;
-  }
-
-  .footer__left-column p {
-    margin-bottom: 40px;
-  }
-
-  .footer__social {
     display: flex;
-    justify-content: space-between;
     align-items: center;
-    color: rgba(78, 78, 78, 0.45);
-    margin-top: 20px;
+    order: 1;
+
+    p {
+      margin-right: 30px;
+    }
+
+    .inline-list li {
+      margin-right: 10px;
+    }
   }
 
-  .footer__social {
-    i {
-      background: rgba(203, 203, 203, 0.23);
-      padding: 17px;
-      margin-right: 10px;
-      font-size: 18px;
-      width: 20px;
-      display: flex;
-      justify-content: center;
-      border-radius: 10px;
-      cursor: pointer;
-    }
-    i:last-child {
-      margin-right: 0px;
+  .footer__copyright {
+    border-top: 1px solid $divider-color;
+    padding-top: 30px;
+
+    p {
+      border: none;
+      padding-top: 3px;
     }
   }
 
   .contact .footer__header,
   .contact > p {
-    display: none;
-  }
-
-  .footer__contact--contact-details {
     display: block;
-    justify-content: space-between;
-    margin-top: 0px;
   }
 }

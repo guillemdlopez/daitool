@@ -5,27 +5,17 @@
   border-radius: 50%;
   width: 21px;
   height: 21px;
-  top: 6px;
-  right: 104px;
   font-size: 12px;
   display: flex;
   justify-content: center;
   align-items: center;
+  top: 17px;
+  right: 28px;
 }
 
-@media (max-width: 414px) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 1) {
   .badge {
-    position: absolute;
-    background-color: white;
-    color: #ff723d;
-    border-radius: 50%;
-    width: 21px;
-    height: 21px;
-    top: 17px;
-    right: 28px;
-    font-size: 12px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    top: 6px;
+    right: 122px;
   }
-}
+} ;

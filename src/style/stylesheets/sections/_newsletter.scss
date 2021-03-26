@@ -1,3 +1,4 @@
+/** MOBILE IPHONE 6+, IPHONE7+, IPHONE 8+**/
 #newsletter {
   margin-top: 60px;
 }
@@ -5,41 +6,28 @@
 .newsletter__signup {
   background: $primary;
   color: white;
-  padding: 80px 0px;
+  padding: 30px 0px 0px;
   position: relative;
-  scroll-margin: 70px;
+  height: 422px;
 
   .newsletter__banner--subscribe-btn {
     background: $base-text-color;
     position: absolute;
-    right: 119px;
-    z-index: 1;
-    transition: background 0.3s;
-    top: 121px;
-
-    &:hover {
-      background: darken($color: $base-text-color, $amount: 5);
-    }
+    right: 8px;
+    top: 370px;
+    height: 52px;
+    color: white;
   }
 }
 
 .newsletter__signup-content {
-  display: flex;
+  display: block;
   justify-content: space-between;
   align-items: center;
 }
+
 .newsletter__briefs {
   width: 90px;
-}
-
-.newsletter__signup--content-description {
-  width: 655px;
-  margin-left: 43px;
-
-  p {
-    margin-top: 20px;
-    width: 85%;
-  }
 }
 
 .newsletter__email-input {
@@ -47,73 +35,66 @@
   border: none;
   border-radius: 12px;
   padding: 10px 24px;
-  width: 400px;
-  position: relative;
-  z-index: 1;
+  width: 352px;
+  margin-top: 20px;
 }
 
 .newsletter__bg-texture {
-  position: absolute;
-  width: 37px;
+  display: none;
 }
 
-.top__texture {
-  z-index: 1;
-  top: 54px;
-  left: 38.5%;
-}
-
-.bottom__texture {
-  right: 88px;
-  bottom: 34%;
-}
-
-@media (max-width: 414px) {
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 1) {
   .newsletter__signup {
-    background: #ff723d;
-    color: white;
-    padding: 30px 0px 0px;
-    position: relative;
-    height: 422px;
+    padding: 80px 0px;
+    height: auto;
+    scroll-margin: 70px;
+
+    .newsletter__banner--subscribe-btn {
+      right: 119px;
+      z-index: 1;
+      transition: background 0.3s;
+      top: 131px;
+
+      &:hover {
+        background: darken($color: $base-text-color, $amount: 5);
+      }
+    }
   }
+
   .newsletter__signup-content {
-    display: block;
+    display: flex;
     justify-content: space-between;
     align-items: center;
   }
 
   .newsletter__signup--content-description {
-    margin-left: 0px;
-    width: auto;
+    width: 655px;
+    margin-left: 43px;
 
     p {
-      width: auto;
+      margin-top: 20px;
+      width: 85%;
     }
   }
 
   .newsletter__email-input {
-    height: 49px;
-    border: none;
-    border-radius: 12px;
-    padding: 10px 24px;
-    width: 352px;
-    position: relative;
+    width: 400px;
     z-index: 1;
-    margin-top: 20px;
   }
-  .newsletter__signup {
-    .newsletter__banner--subscribe-btn {
-      background: #25282b;
-      position: absolute;
-      right: 8px;
-      z-index: 1;
-      transition: 0.3s;
-      bottom: 41px;
-      top: 381px;
-      height: 52px;
-    }
-  }
+
   .newsletter__bg-texture {
-    display: none;
+    position: absolute;
+    width: 37px;
+  }
+
+  .top__texture {
+    z-index: 1;
+    top: 54px;
+    left: 38.5%;
+  }
+
+  .bottom__texture {
+    right: 88px;
+    bottom: 34%;
   }
 }

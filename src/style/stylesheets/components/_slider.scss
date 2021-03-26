@@ -1,8 +1,11 @@
-.slider {
+/** MOBILE IPHONE6+, IPHONE7+, IPHONE8+ **/
+.brands__slider {
   display: grid;
-  grid-template-columns: repeat(6, 1fr);
+  grid-template-columns: 1fr 1fr;
   align-items: center;
   justify-items: center;
+  grid-gap: 20px;
+  margin-top: 40px;
 
   img {
     width: 100px;
@@ -11,46 +14,30 @@
 
 .selected__prods-slider {
   display: flex;
-  align-items: center;
-  position: absolute;
-  top: 64px;
-  right: -499px;
   width: 100%;
-  transition-duration: 0.6s;
+  overflow-x: scroll;
+  height: 103%;
+  width: 100%;
+  position: relative;
+  top: 0px;
+  right: 0px;
+  padding: 10px 0px 10px 2px;
 }
 
-// .slide {
-//   position: absolute;
-//   top: 0;
-//   height: 50rem;
-
-//   display: flex;
-//   align-items: center;
-//   justify-content: center;
-
-//   /* THIS creates the animation! */
-//   transition: transform 1s;
-// }
-
-@media (max-width: 414px) {
-  .slider {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    align-items: center;
-    justify-items: center;
-    grid-gap: 20px;
-    margin-top: 40px;
+@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 1) {
+  .brands__slider {
+    grid-template-columns: repeat(6, 1fr);
   }
 
   .selected__prods-slider {
     display: flex;
+    align-items: center;
+    position: absolute;
+    overflow: unset;
+    top: 64px;
+    right: -499px;
     width: 100%;
-    overflow-x: scroll;
-    height: 103%;
-    width: 100%;
-    position: relative;
-    top: 0px;
-    right: 0px;
-    padding: 10px 0px 10px 2px;
+    transition-duration: 0.6s;
+    height: auto;
   }
 }
