@@ -93,7 +93,7 @@
   color: white;
   padding: 14px 24px;
   border-radius: $border-radius-btn;
-  transition: 0.3s;
+  transition: background 0.3s;
 
   &:hover {
     background: darken($color: $primary, $amount: 5);
@@ -105,7 +105,7 @@
   border: $border-btn-contact;
   color: $blue-color;
   padding: 10px 24px;
-  transition: 0.3s;
+  transition: background 0.3s;
 
   &:hover {
     background: $blue-color;
@@ -129,7 +129,7 @@
   .btn__search {
     position: absolute;
     right: 16px;
-    top: 25px;
+    top: 29px;
   }
 }
 

@@ -14,7 +14,7 @@
     position: absolute;
     right: 119px;
     z-index: 1;
-    transition: 0.3s;
+    transition: background 0.3s;
     top: 121px;
 
     &:hover {
@@ -38,6 +38,7 @@
 
   p {
     margin-top: 20px;
+    width: 85%;
   }
 }
 
@@ -84,6 +85,10 @@
   .newsletter__signup--content-description {
     margin-left: 0px;
     width: auto;
+
+    p {
+      width: auto;
+    }
   }
 
   .newsletter__email-input {

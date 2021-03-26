@@ -17,6 +17,7 @@
 
 .banner__link {
   text-decoration: underline;
+  cursor: pointer;
 }
 
 .banner__content {
@@ -53,7 +54,7 @@
 .newsletter__banner {
   background-image: url(../images/bg-newsletter.png);
   height: 332px;
-  background-size: contain;
+  background-size: cover;
   color: white;
   display: flex;
   align-items: center;

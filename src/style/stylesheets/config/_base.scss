@@ -8,6 +8,10 @@
   color: $default-text-fields-color;
 }
 
+::-webkit-scrollbar {
+  display: none;
+}
+
 body {
   margin-bottom: 40px;
   color: $base-text-color;
@@ -171,7 +175,7 @@ input {
 
   li {
     display: block;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
     cursor: pointer;
 
     &:hover {

@@ -8,7 +8,7 @@ export const modalNewsletter = () => {
   newsletterform.addEventListener('submit', e => {
     e.preventDefault();
 
-    if (!emailInput.value) {
+    if (!emailInput.value.length == 0) {
       Swal.fire({
         confirmButtonColor: '#ff723d',
         title: 'Error ⛔️',
@@ -20,7 +20,7 @@ export const modalNewsletter = () => {
     if (!validator.isEmail(emailInput.value)) {
       Swal.fire({
         confirmButtonColor: '#ff723d',
-        title: 'Error ⛔️',
+        title: 'Not valid ⛔️',
         text: 'You have to introduce a valid email address ',
         icon: 'error',
       });

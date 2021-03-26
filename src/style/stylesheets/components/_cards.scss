@@ -226,8 +226,18 @@
   }
 
   .blog__posts-cards {
-    display: grid;
-    grid-template-columns: repeat(1, 1fr);
-    grid-gap: 20px;
+    overflow-x: scroll;
+    overflow-y: hidden;
+    white-space: nowrap;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+  }
+
+  .blog__post-card {
+    display: inline-block;
+    flex: 0 0 auto;
+    margin-right: 20px;
+    width: 100%;
   }
 }
