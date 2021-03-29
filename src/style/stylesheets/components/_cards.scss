@@ -160,7 +160,7 @@
 @media (max-width: 375px) {
   .features__card {
     img {
-      right: 31%;
+      right: 33%;
     }
   }
 
@@ -173,11 +173,11 @@
 
 @media (max-width: 320px) {
   .customer img {
-    right: 39%;
+    right: 43%;
   }
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1200px) and (max-width: 2400px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 1) {
   .categories__cards {
     grid-template-columns: 1fr 1fr 1fr;
   }

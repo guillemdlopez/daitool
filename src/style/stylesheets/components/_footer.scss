@@ -120,7 +120,7 @@ footer {
 .footer__copyright {
   p {
     border-top: 1px solid $divider-color;
-    padding-top: 30px;
+    padding-top: 20px;
   }
 }
 
@@ -128,7 +128,7 @@ footer {
   margin-right: 0px;
 }
 
-@media screen and (min-device-width: 1200px) and (max-device-width: 1600px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 1) {
+@media screen and (min-width: 1200px) and (max-width: 2400px) and (-webkit-min-device-pixel-ratio: 2) and (min-resolution: 192dpi) and (-webkit-min-device-pixel-ratio: 1) {
   .footer__content {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
@@ -188,7 +188,7 @@ footer {
 
   .footer__copyright {
     border-top: 1px solid $divider-color;
-    padding-top: 30px;
+    padding-top: 10px;
 
     p {
       border: none;

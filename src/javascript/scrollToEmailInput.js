@@ -5,7 +5,7 @@ export const scrollToEmailInput = () => {
     '.newsletter__banner--subscribe-btn'
   )[1];
 
-  btnWhite.addEventListener('click', e => {
+  btnWhite.addEventListener('click', () => {
     inputForm.scrollIntoView({ behavior: 'smooth' });
     inputForm.focus();
 
