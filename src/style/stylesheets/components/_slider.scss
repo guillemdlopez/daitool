@@ -23,7 +23,7 @@
   padding: 10px 0px 10px 2px;
 }
 
-@media (min-width: 1200px) and (max-width: 2400px) {
+@media (min-width: 1000px) and (max-width: 2400px) {
   .brands__slider {
     grid-template-columns: repeat(6, 1fr);
   }
