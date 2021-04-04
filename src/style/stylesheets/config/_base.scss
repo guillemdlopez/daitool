@@ -209,6 +209,13 @@ input {
   }
 }
 
+@media (max-width: 1920px) {
+  .container {
+    width: 1400px;
+    margin: 0 auto;
+  }
+}
+
 @media (max-width: 414px) {
   .container {
     width: 400px;

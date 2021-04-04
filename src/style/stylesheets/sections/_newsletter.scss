@@ -123,3 +123,9 @@
     bottom: 34%;
   }
 }
+
+@media (max-width: 1920px) {
+  .newsletter__signup .newsletter__banner--subscribe-btn {
+    right: 269px;
+  }
+}

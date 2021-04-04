@@ -43,3 +43,10 @@
     margin-top: 40px;
   }
 }
+
+@media (max-width: 1920px) {
+  .selected__prods-controls-inside--gray {
+    height: 287%;
+    right: -99px;
+  }
+}
