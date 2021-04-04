@@ -2,6 +2,8 @@
 
 > Built with my own frontend Boilerplate. For more information about the boilerplate go to [this](https://github.com/guillemdlopez/webpack-boilerplate) github repository.
 
+If you want to check the final output go to [this](https://daitool.netlify.app/) website.
+
 - [Pictures](#pictures)
 - [Scripts](#scripts)
 - [Let's Start ▶️](#start)
