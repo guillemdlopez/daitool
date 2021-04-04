@@ -71,6 +71,16 @@
   }
 }
 
+@media (max-width: 320px) {
+  .navbar__logo {
+    width: 130px;
+  }
+
+  .sidebar__logo-black {
+    width: 130px;
+  }
+}
+
 @media (min-width: 1000px) and (max-width: 2400px) {
   .navbar {
     padding: $padding-nav-menu;
