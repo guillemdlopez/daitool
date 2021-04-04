@@ -141,3 +141,13 @@
     color: white;
   }
 }
+
+@media (max-width: 1920px) {
+  .banner {
+    background-position: center;
+  }
+
+  .banner__content {
+    margin-right: 350px;
+  }
+}
